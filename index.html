@@ -5,62 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bill Stanton | CS Projects</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #f5f5f5;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .intro-text {
+      max-width: 500px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Bill Stanton</h1>
-    <p>Computer Science & Data Science Student</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="assets/Profile.jpg" alt="Bill Stanton Photo" />
+    <div class="intro-text">
+      <h1>Bill Stanton</h1>
+      <p>Computer Science & Data Science Student<br>Passionate about AI, Machine Learning, and Tech for Good</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section id="projects">
     <h2>My Projects</h2>
     <div class="project-grid">
-      <!-- Project 1 -->
       <div class="project-card">
-        <img src="assets/Cancer_Cells.png"/>
-        <h3>ML Cancerous Cell Detector (R) </h3>
-        <p>A kNN Machine Learning algorithm to classify cells as cancerous or benign.</p>
+        <img src="assets/Cancer_Cells.png" />
+        <h3>ML Cancerous Cell Detector (R)</h3>
+        <p>kNN algorithm to classify cells as cancerous or benign.</p>
         <a href="https://github.com/williamstanton3/ML-Cancerous-Cell-Detector" target="_blank">View Code</a>
       </div>
-      <!-- Project 2 -->
       <div class="project-card">
-        <img src="assets/Chess.jpg"/>
+        <img src="assets/Chess.jpg" />
         <h3>Chess (Java)</h3>
         <p>A fully functional game of chess for two local users.</p>
         <a href="https://github.com/williamstanton3/Chess" target="_blank">View Code</a>
       </div>
-      <!-- Project 3 -->
       <div class="project-card">
-        <img src="assets/World_Map.jpg"/>
+        <img src="assets/World_Map.jpg" />
         <h3>Foods vs Deaths (Python)</h3>
-        <p>Explored the relationship between the dietary habits and mortality causes in various countries.</p>
+        <p>Exploring the relationship between diet and mortality globally.</p>
         <a href="https://github.com/williamstanton3/Deaths_vs_Foods" target="_blank">View Code</a>
       </div>
     </div>
   </section>
 
   <section id="about">
-    <h2>About Me</h2>
-    <img src="assets/Profile.jpg"/>
-    <p>I'm a Computer & Data Science student passionate about Machine Learning and AI.</p>
+    <h2>More About Me</h2>
+    <p>I'm a Computer & Data Science student at Grove City College with a passion for using machine learning and AI to improve lives, particularly in the healthcare space. I’m driven by a desire to serve God and make a difference through technology.</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: stantonWJ23@gcc.edu</p>
     <p>Phone: 240-529-4136</p>
-    <p><a href="https://github.com/williamstanton3">GitHub</a> | <a href="https://www.linkedin.com/in/bill-stanton-6681ba298/">LinkedIn</a></p>
+    <p>
+      <a href="https://github.com/williamstanton3">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/bill-stanton-6681ba298/">LinkedIn</a>
+    </p>
   </section>
 
   <footer>
     <p>&copy; 2025 Bill Stanton</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
